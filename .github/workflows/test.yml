@@ -20,7 +20,7 @@ jobs:
       - name: get the command
         uses: actions/checkout@v3
   deploy:
-    needs: test
+    needs: [test, test2]
     runs-on: ubuntu-latest
     steps:
       - name: get the command
